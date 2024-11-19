@@ -1,0 +1,155 @@
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\bin\Debug\DAL.dll
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\bin\Debug\DAL.pdb
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\bin\Debug\DTO.dll
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\bin\Debug\Guna.UI2.dll
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\bin\Debug\DTO.pdb
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\obj\Debug\DAL.dll
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\obj\Debug\DAL.pdb
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\bin\Debug\Emgu.CV.dll
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\bin\Debug\Emgu.CV.UI.dll
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\bin\Debug\Emgu.Util.dll
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\bin\Debug\ZedGraph.dll
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\bin\Debug\Emgu.CV.xml
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\bin\Debug\Emgu.CV.UI.xml
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\bin\Debug\Emgu.Util.xml
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\bin\Debug\ZedGraph.xml
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\bin\Debug\de\ZedGraph.resources.dll
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\bin\Debug\es\ZedGraph.resources.dll
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\bin\Debug\fr\ZedGraph.resources.dll
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\bin\Debug\hu\ZedGraph.resources.dll
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\bin\Debug\it\ZedGraph.resources.dll
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\bin\Debug\ja\ZedGraph.resources.dll
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\bin\Debug\pt\ZedGraph.resources.dll
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\bin\Debug\ru\ZedGraph.resources.dll
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\bin\Debug\sk\ZedGraph.resources.dll
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\bin\Debug\sv\ZedGraph.resources.dll
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\bin\Debug\tr\ZedGraph.resources.dll
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\bin\Debug\zh-cn\ZedGraph.resources.dll
+D:\Year2\hk2\cnpm\project\Project_CNPM\DAL\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\bin\Debug\DAL.dll
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\bin\Debug\DAL.pdb
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\bin\Debug\DTO.dll
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\bin\Debug\Emgu.CV.dll
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\bin\Debug\Emgu.CV.UI.dll
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\bin\Debug\Emgu.Util.dll
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\bin\Debug\Guna.UI2.dll
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\bin\Debug\ZedGraph.dll
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\bin\Debug\DTO.pdb
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\bin\Debug\Emgu.CV.xml
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\bin\Debug\Emgu.CV.UI.xml
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\bin\Debug\Emgu.Util.xml
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\bin\Debug\ZedGraph.xml
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\bin\Debug\de\ZedGraph.resources.dll
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\bin\Debug\fr\ZedGraph.resources.dll
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\bin\Debug\hu\ZedGraph.resources.dll
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\bin\Debug\it\ZedGraph.resources.dll
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\bin\Debug\ja\ZedGraph.resources.dll
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\bin\Debug\ru\ZedGraph.resources.dll
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\bin\Debug\sk\ZedGraph.resources.dll
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\bin\Debug\sv\ZedGraph.resources.dll
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\bin\Debug\tr\ZedGraph.resources.dll
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\obj\Debug\DAL.dll
+C:\Users\Admin\OneDrive\Máy tính\Project_CNPM\DAL\obj\Debug\DAL.pdb
+D:\Project_CNPM\DAL\bin\Debug\DAL.dll
+D:\Project_CNPM\DAL\bin\Debug\DAL.pdb
+D:\Project_CNPM\DAL\bin\Debug\DTO.dll
+D:\Project_CNPM\DAL\bin\Debug\Emgu.CV.dll
+D:\Project_CNPM\DAL\bin\Debug\Emgu.CV.UI.dll
+D:\Project_CNPM\DAL\bin\Debug\Emgu.Util.dll
+D:\Project_CNPM\DAL\bin\Debug\Guna.UI2.dll
+D:\Project_CNPM\DAL\bin\Debug\ZedGraph.dll
+D:\Project_CNPM\DAL\bin\Debug\DTO.pdb
+D:\Project_CNPM\DAL\bin\Debug\Emgu.CV.xml
+D:\Project_CNPM\DAL\bin\Debug\Emgu.CV.UI.xml
+D:\Project_CNPM\DAL\bin\Debug\Emgu.Util.xml
+D:\Project_CNPM\DAL\bin\Debug\ZedGraph.xml
+D:\Project_CNPM\DAL\bin\Debug\de\ZedGraph.resources.dll
+D:\Project_CNPM\DAL\bin\Debug\es\ZedGraph.resources.dll
+D:\Project_CNPM\DAL\bin\Debug\fr\ZedGraph.resources.dll
+D:\Project_CNPM\DAL\bin\Debug\hu\ZedGraph.resources.dll
+D:\Project_CNPM\DAL\bin\Debug\it\ZedGraph.resources.dll
+D:\Project_CNPM\DAL\bin\Debug\ja\ZedGraph.resources.dll
+D:\Project_CNPM\DAL\bin\Debug\pt\ZedGraph.resources.dll
+D:\Project_CNPM\DAL\bin\Debug\ru\ZedGraph.resources.dll
+D:\Project_CNPM\DAL\bin\Debug\sk\ZedGraph.resources.dll
+D:\Project_CNPM\DAL\bin\Debug\sv\ZedGraph.resources.dll
+D:\Project_CNPM\DAL\bin\Debug\tr\ZedGraph.resources.dll
+D:\Project_CNPM\DAL\bin\Debug\zh-cn\ZedGraph.resources.dll
+D:\Project_CNPM\DAL\bin\Debug\zh-tw\ZedGraph.resources.dll
+D:\Project_CNPM\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\Project_CNPM\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Project_CNPM\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Project_CNPM\DAL\obj\Debug\DAL.dll
+D:\Project_CNPM\DAL\obj\Debug\DAL.pdb
+C:\Users\caoky\Desktop\Project_CNPM\DAL\bin\Debug\DAL.dll
+C:\Users\caoky\Desktop\Project_CNPM\DAL\bin\Debug\DAL.pdb
+C:\Users\caoky\Desktop\Project_CNPM\DAL\bin\Debug\DTO.dll
+C:\Users\caoky\Desktop\Project_CNPM\DAL\bin\Debug\Emgu.CV.dll
+C:\Users\caoky\Desktop\Project_CNPM\DAL\bin\Debug\Emgu.CV.UI.dll
+C:\Users\caoky\Desktop\Project_CNPM\DAL\bin\Debug\Emgu.Util.dll
+C:\Users\caoky\Desktop\Project_CNPM\DAL\bin\Debug\Guna.UI2.dll
+C:\Users\caoky\Desktop\Project_CNPM\DAL\bin\Debug\ZedGraph.dll
+C:\Users\caoky\Desktop\Project_CNPM\DAL\bin\Debug\DTO.pdb
+C:\Users\caoky\Desktop\Project_CNPM\DAL\bin\Debug\Emgu.CV.xml
+C:\Users\caoky\Desktop\Project_CNPM\DAL\bin\Debug\Emgu.CV.UI.xml
+C:\Users\caoky\Desktop\Project_CNPM\DAL\bin\Debug\Emgu.Util.xml
+C:\Users\caoky\Desktop\Project_CNPM\DAL\bin\Debug\ZedGraph.xml
+C:\Users\caoky\Desktop\Project_CNPM\DAL\bin\Debug\de\ZedGraph.resources.dll
+C:\Users\caoky\Desktop\Project_CNPM\DAL\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\caoky\Desktop\Project_CNPM\DAL\bin\Debug\fr\ZedGraph.resources.dll
+C:\Users\caoky\Desktop\Project_CNPM\DAL\bin\Debug\hu\ZedGraph.resources.dll
+C:\Users\caoky\Desktop\Project_CNPM\DAL\bin\Debug\it\ZedGraph.resources.dll
+C:\Users\caoky\Desktop\Project_CNPM\DAL\bin\Debug\ja\ZedGraph.resources.dll
+C:\Users\caoky\Desktop\Project_CNPM\DAL\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\caoky\Desktop\Project_CNPM\DAL\bin\Debug\ru\ZedGraph.resources.dll
+C:\Users\caoky\Desktop\Project_CNPM\DAL\bin\Debug\sk\ZedGraph.resources.dll
+C:\Users\caoky\Desktop\Project_CNPM\DAL\bin\Debug\sv\ZedGraph.resources.dll
+C:\Users\caoky\Desktop\Project_CNPM\DAL\bin\Debug\tr\ZedGraph.resources.dll
+C:\Users\caoky\Desktop\Project_CNPM\DAL\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\caoky\Desktop\Project_CNPM\DAL\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\caoky\Desktop\Project_CNPM\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\caoky\Desktop\Project_CNPM\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\caoky\Desktop\Project_CNPM\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\caoky\Desktop\Project_CNPM\DAL\obj\Debug\DAL.dll
+C:\Users\caoky\Desktop\Project_CNPM\DAL\obj\Debug\DAL.pdb
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\bin\Debug\DAL.dll
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\bin\Debug\DAL.pdb
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\bin\Debug\DTO.dll
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\bin\Debug\Emgu.CV.dll
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\bin\Debug\Emgu.CV.UI.dll
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\bin\Debug\Emgu.Util.dll
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\bin\Debug\Guna.UI2.dll
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\bin\Debug\ZedGraph.dll
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\bin\Debug\DTO.pdb
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\bin\Debug\Emgu.CV.xml
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\bin\Debug\Emgu.CV.UI.xml
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\bin\Debug\Emgu.Util.xml
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\bin\Debug\ZedGraph.xml
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\bin\Debug\de\ZedGraph.resources.dll
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\bin\Debug\fr\ZedGraph.resources.dll
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\bin\Debug\hu\ZedGraph.resources.dll
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\bin\Debug\it\ZedGraph.resources.dll
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\bin\Debug\ja\ZedGraph.resources.dll
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\bin\Debug\ru\ZedGraph.resources.dll
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\bin\Debug\sk\ZedGraph.resources.dll
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\bin\Debug\sv\ZedGraph.resources.dll
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\bin\Debug\tr\ZedGraph.resources.dll
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\obj\Debug\DAL.csproj.Up2Date
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\obj\Debug\DAL.dll
+C:\Users\NguyenQuan\Downloads\Tham Khao\CNPM N10\CNPM - Project (N10)-20241001T063256Z-002\CNPM - Project (N10)\Source Code\Project_CNPM\Project_CNPM\DAL\obj\Debug\DAL.pdb

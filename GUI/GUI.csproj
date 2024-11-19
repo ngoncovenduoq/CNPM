@@ -1,0 +1,1172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props" Condition="Exists('packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{20B7AABC-D7D8-4A5D-B73B-DDF775053302}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project_CNPM</RootNamespace>
+    <AssemblyName>Project_CNPM</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Emgu.CV, Version=2.2.1.1150, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.CV.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.UI, Version=2.2.1.1150, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.Util, Version=2.2.1.1150, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.160.1000.6\lib\net462\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>packages\OpenTK.1.1.2225.0\lib\net20\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK.GLControl, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>packages\OpenTK.GLControl.1.1.2225.0\lib\net20\OpenTK.GLControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing.Common, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Drawing.Common.7.0.0\lib\net462\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Drawing.Primitives.4.3.0\lib\net45\System.Drawing.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.4.3.1\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Encodings.Web.7.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=7.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Json.7.0.3\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.1.5.28844, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <HintPath>packages\ZedGraph.5.1.5\lib\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Blank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Blank.Designer.cs">
+      <DependentUpon>Blank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BS_Calendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BS_Calendar.Designer.cs">
+      <DependentUpon>BS_Calendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BS_Export.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BS_Export.Designer.cs">
+      <DependentUpon>BS_Export.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BS_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BS_Home.Designer.cs">
+      <DependentUpon>BS_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BS_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BS_List.Designer.cs">
+      <DependentUpon>BS_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BS_Appointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BS_Appointment.Designer.cs">
+      <DependentUpon>BS_Appointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BS_Receive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BS_Receive.Designer.cs">
+      <DependentUpon>BS_Receive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BS_Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BS_Schedule.Designer.cs">
+      <DependentUpon>BS_Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BS_Statistical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BS_Statistical.Designer.cs">
+      <DependentUpon>BS_Statistical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BS_Treatment_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BS_Treatment_Update.Designer.cs">
+      <DependentUpon>BS_Treatment_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaLam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CaLam.Designer.cs">
+      <DependentUpon>CaLam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice.Designer.cs">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Benh_An.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Benh_An.Designer.cs">
+      <DependentUpon>Benh_An.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Date.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Date.Designer.cs">
+      <DependentUpon>Date.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor.Designer.cs">
+      <DependentUpon>Doctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empty.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Empty.Designer.cs">
+      <DependentUpon>Empty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.Designer.cs">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyNhaKhoaDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyNhaKhoaDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyNhaKhoaDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyNhaKhoaDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyNhaKhoaDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyNhaKhoaDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyNhaKhoaDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyNhaKhoaDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportOwner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportOwner.Designer.cs">
+      <DependentUpon>ReportOwner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thuoc.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Thuoc.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Web.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Web.Designer.cs">
+      <DependentUpon>Web.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFace.Designer.cs">
+      <DependentUpon>LoginFace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rec_Change_Doctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rec_Change_Doctor.Designer.cs">
+      <DependentUpon>Rec_Change_Doctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HinhThuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HinhThuc.Designer.cs">
+      <DependentUpon>HinhThuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Owner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Owner.Designer.cs">
+      <DependentUpon>Owner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Owner_AddMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Owner_AddMaterial.Designer.cs">
+      <DependentUpon>Owner_AddMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Owner_AddMedicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Owner_AddMedicine.Designer.cs">
+      <DependentUpon>Owner_AddMedicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Owner_AddService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Owner_AddService.Designer.cs">
+      <DependentUpon>Owner_AddService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Owner_Calendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Owner_Calendar.Designer.cs">
+      <DependentUpon>Owner_Calendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Owner_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Owner_Home.Designer.cs">
+      <DependentUpon>Owner_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Owner_Income.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Owner_Income.Designer.cs">
+      <DependentUpon>Owner_Income.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Owner_MedicalInstruments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Owner_MedicalInstruments.Designer.cs">
+      <DependentUpon>Owner_MedicalInstruments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Owner_Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Owner_Patient.Designer.cs">
+      <DependentUpon>Owner_Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Owner_Salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Owner_Salary.Designer.cs">
+      <DependentUpon>Owner_Salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Owner_Spending.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Owner_Spending.Designer.cs">
+      <DependentUpon>Owner_Spending.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Owner_Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Owner_Staff.Designer.cs">
+      <DependentUpon>Owner_Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Owner_Staff_Doc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Owner_Staff_Doc.Designer.cs">
+      <DependentUpon>Owner_Staff_Doc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Owner_Staff_Rec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Owner_Staff_Rec.Designer.cs">
+      <DependentUpon>Owner_Staff_Rec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Owner_Statistical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Owner_Statistical.Designer.cs">
+      <DependentUpon>Owner_Statistical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyNhaKhoaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyNhaKhoaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyNhaKhoaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyNhaKhoaDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyNhaKhoaDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyNhaKhoaDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Receptionist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receptionist.Designer.cs">
+      <DependentUpon>Receptionist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rec_AddAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rec_AddAppointment.Designer.cs">
+      <DependentUpon>Rec_AddAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rec_AddDoctorSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rec_AddDoctorSchedule.Designer.cs">
+      <DependentUpon>Rec_AddDoctorSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rec_AddPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rec_AddPatient.Designer.cs">
+      <DependentUpon>Rec_AddPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rec_Calendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rec_Calendar.Designer.cs">
+      <DependentUpon>Rec_Calendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rec_Cashier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rec_Cashier.Designer.cs">
+      <DependentUpon>Rec_Cashier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rec_Check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rec_Check.Designer.cs">
+      <DependentUpon>Rec_Check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rec_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rec_Home.Designer.cs">
+      <DependentUpon>Rec_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rec_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rec_List.Designer.cs">
+      <DependentUpon>Rec_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rec_Scheduledcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rec_Scheduledcs.Designer.cs">
+      <DependentUpon>Rec_Scheduledcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BS_Treatment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BS_Treatment.Designer.cs">
+      <DependentUpon>BS_Treatment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegiFace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegiFace.Designer.cs">
+      <DependentUpon>RegiFace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tao_theo_doi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tao_theo_doi.Designer.cs">
+      <DependentUpon>Tao_theo_doi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Theo_doi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Theo_doi.Designer.cs">
+      <DependentUpon>Theo_doi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Blank.resx">
+      <DependentUpon>Blank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BS_Calendar.resx">
+      <DependentUpon>BS_Calendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BS_Export.resx">
+      <DependentUpon>BS_Export.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BS_Home.resx">
+      <DependentUpon>BS_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BS_List.resx">
+      <DependentUpon>BS_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BS_Appointment.resx">
+      <DependentUpon>BS_Appointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BS_Receive.resx">
+      <DependentUpon>BS_Receive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BS_Schedule.resx">
+      <DependentUpon>BS_Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BS_Statistical.resx">
+      <DependentUpon>BS_Statistical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BS_Treatment_Update.resx">
+      <DependentUpon>BS_Treatment_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaLam.resx">
+      <DependentUpon>CaLam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice.resx">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Benh_An.resx">
+      <DependentUpon>Benh_An.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctor.resx">
+      <DependentUpon>Doctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPassword.resx">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HinhThuc.resx">
+      <DependentUpon>HinhThuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFace.resx">
+      <DependentUpon>LoginFace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medican.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Owner.resx">
+      <DependentUpon>Owner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Owner_AddMaterial.resx">
+      <DependentUpon>Owner_AddMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Owner_AddMedicine.resx">
+      <DependentUpon>Owner_AddMedicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Owner_AddService.resx">
+      <DependentUpon>Owner_AddService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Owner_Calendar.resx">
+      <DependentUpon>Owner_Calendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Owner_Home.resx">
+      <DependentUpon>Owner_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Owner_Income.resx">
+      <DependentUpon>Owner_Income.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Owner_MedicalInstruments.resx">
+      <DependentUpon>Owner_MedicalInstruments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Owner_Patient.resx">
+      <DependentUpon>Owner_Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Owner_Salary.resx">
+      <DependentUpon>Owner_Salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Owner_Spending.resx">
+      <DependentUpon>Owner_Spending.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Owner_Staff.resx">
+      <DependentUpon>Owner_Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Owner_Staff_Doc.resx">
+      <DependentUpon>Owner_Staff_Doc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Owner_Staff_Rec.resx">
+      <DependentUpon>Owner_Staff_Rec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Owner_Statistical.resx">
+      <DependentUpon>Owner_Statistical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receptionist.resx">
+      <DependentUpon>Receptionist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rec_AddAppointment.resx">
+      <DependentUpon>Rec_AddAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rec_AddDoctorSchedule.resx">
+      <DependentUpon>Rec_AddDoctorSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rec_AddPatient.resx">
+      <DependentUpon>Rec_AddPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rec_Calendar.resx">
+      <DependentUpon>Rec_Calendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rec_Cashier.resx">
+      <DependentUpon>Rec_Cashier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rec_Change_Doctor.resx">
+      <DependentUpon>Rec_Change_Doctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rec_Check.resx">
+      <DependentUpon>Rec_Check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rec_Home.resx">
+      <DependentUpon>Rec_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rec_List.resx">
+      <DependentUpon>Rec_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rec_Scheduledcs.resx">
+      <DependentUpon>Rec_Scheduledcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BS_Treatment.resx">
+      <DependentUpon>BS_Treatment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaLam.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegiFace.resx">
+      <DependentUpon>RegiFace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportOwner.resx">
+      <DependentUpon>ReportOwner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tao_theo_doi.resx">
+      <DependentUpon>Tao_theo_doi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Theo_doi.resx">
+      <DependentUpon>Theo_doi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thongke.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Web.resx">
+      <DependentUpon>Web.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include=".editorconfig" />
+    <None Include="OpenTK.dll.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\DTO.Account.datasource" />
+    <None Include="Properties\DataSources\DTO.Benh_nhan.datasource" />
+    <None Include="Properties\DataSources\DTO.Ca_lam.datasource" />
+    <None Include="Properties\DataSources\DTO.Dich_vu.datasource" />
+    <None Include="Properties\DataSources\DTO.Doctor.datasource" />
+    <None Include="Properties\DataSources\DTO.Lam_viec.datasource" />
+    <None Include="Properties\DataSources\DTO.Owner.datasource" />
+    <None Include="Properties\DataSources\DTO.Patient.datasource" />
+    <None Include="Properties\DataSources\DTO.Rec.datasource" />
+    <None Include="Properties\DataSources\DTO.Thanh_toan.datasource" />
+    <None Include="Properties\DataSources\DTO.Thuoc.datasource" />
+    <None Include="Properties\DataSources\DTO.User.datasource" />
+    <None Include="Properties\DataSources\DTO.Vat_lieu.datasource" />
+    <None Include="Properties\DataSources\Static.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QuanLyNhaKhoaDataSet3.xsc">
+      <DependentUpon>QuanLyNhaKhoaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyNhaKhoaDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyNhaKhoaDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyNhaKhoaDataSet3.xss">
+      <DependentUpon>QuanLyNhaKhoaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyNhaKhoaDataSet4.xsc">
+      <DependentUpon>QuanLyNhaKhoaDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyNhaKhoaDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyNhaKhoaDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyNhaKhoaDataSet4.xss">
+      <DependentUpon>QuanLyNhaKhoaDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyNhaKhoaDataSet5.xsc">
+      <DependentUpon>QuanLyNhaKhoaDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyNhaKhoaDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyNhaKhoaDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyNhaKhoaDataSet5.xss">
+      <DependentUpon>QuanLyNhaKhoaDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyNhaKhoaDataSet6.xsc">
+      <DependentUpon>QuanLyNhaKhoaDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyNhaKhoaDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyNhaKhoaDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyNhaKhoaDataSet6.xss">
+      <DependentUpon>QuanLyNhaKhoaDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Thuoc.xsc">
+      <DependentUpon>Thuoc.xsd</DependentUpon>
+    </None>
+    <None Include="Thuoc.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Thuoc.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Thuoc.xss">
+      <DependentUpon>Thuoc.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QuanLyNhaKhoaDataSet.xsc">
+      <DependentUpon>QuanLyNhaKhoaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyNhaKhoaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyNhaKhoaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyNhaKhoaDataSet.xss">
+      <DependentUpon>QuanLyNhaKhoaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyNhaKhoaDataSet1.xsc">
+      <DependentUpon>QuanLyNhaKhoaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyNhaKhoaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyNhaKhoaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyNhaKhoaDataSet1.xss">
+      <DependentUpon>QuanLyNhaKhoaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyNhaKhoaDataSet2.xsc">
+      <DependentUpon>QuanLyNhaKhoaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyNhaKhoaDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyNhaKhoaDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyNhaKhoaDataSet2.xss">
+      <DependentUpon>QuanLyNhaKhoaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\calendar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timetable1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trend1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brightness.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\night-mode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kit21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timetable21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trend21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kit3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timetable3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trend3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\art.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark-mode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exchange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timetable11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timetable12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trend4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trend5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\examination.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medicine1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\examination1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medicine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\description.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teeth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accountable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\consent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expenses.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expenses1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firstkit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firstkit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\income.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salary1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salary2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spending.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receptionist1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receptionist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dentisttools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dentisttools1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edittable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edittable1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checklist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\listing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skills.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashmachine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{1c246467-2b40-4291-bb38-467aa2c54ef6}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{4f74a408-e7fa-41f8-974f-540d7c53af48}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checked1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="haarcascade_frontalface_default.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\picLogo2.png" />
+    <None Include="Resources\calendar_w.png" />
+    <None Include="Resources\calendar_b.png" />
+    <None Include="Resources\calendar %284%29.png" />
+    <None Include="Resources\432960950_1297138554539647_499914362305738825_n.png" />
+    <None Include="Resources\picLogo.jpg" />
+    <None Include="Resources\picTtbn.png" />
+    <None Include="Resources\picTtnv.png" />
+    <None Include="Resources\iconQlllv.png" />
+    <None Include="Resources\iconDoanhThu.png" />
+    <None Include="Resources\iconQltc.png" />
+    <None Include="Resources\iconQlvtyt.png" />
+    <None Include="Resources\iconQllnv.png" />
+    <None Include="Resources\iconQltt.png" />
+    <None Include="Resources\logo-removebg-preview.png" />
+    <None Include="Resources\Expand_down.png" />
+    <None Include="Resources\tkcl.png" />
+    <None Include="Resources\qlbn.png" />
+    <None Include="Resources\Group %281%29.png" />
+    <None Include="Resources\Group.png" />
+    <None Include="Resources\Vector.png" />
+    <None Include="Resources\interface-file-clipboard-text--edition-form-task-checklist-edit-clipboard--Streamline-Core1.png" />
+    <None Include="Resources\face-scan %281%29.png" />
+    <None Include="Resources\united-kingdom.png" />
+    <None Include="Resources\vietnam.png" />
+    <None Include="Resources\language1.png" />
+    <None Include="Resources\language.png" />
+    <None Include="Resources\return.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="packages\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props'))" />
+  </Target>
+</Project>
